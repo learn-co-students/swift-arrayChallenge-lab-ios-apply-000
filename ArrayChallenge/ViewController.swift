@@ -28,6 +28,8 @@ class ViewController: UIViewController {
     }
     
     // Implement your method here
+    
+    // Declared a new empty array of type [String]. Use a combination of a for loop and .enumate to append a new String item to the newArray with the format ("\(index + 1). \(quantityOfItems[index]) \(itemName)"). We use index + 1 because we want to start the list at "1.". Humans count starting from 1, not 0. quantityOfItems[index] gives us the Int value at the index of the quantityOfItems array. itemName is already iterated in the for loop, so we get the name of the item we're looking for.
 
     func makeShoppingListWithItems(itemName: [String], quantityOfItems: [Int]) -> [String] {
         var newArray: [String] = []
