@@ -20,9 +20,9 @@ class ViewController: UIViewController {
     var nameOfItems: [String] = ["Bananas", "Apples", "Eggs", "Rolls"]
     
     
-    func makeShoppingListWithItems(_ basket: [String], quantityOfItems: [Int]) -> [String] {
+    func makeShoppingListWithItems( _ basket: [String], quantity: [Int]) -> [String] {
         for (index, food) in basket.enumerate() {
-            shoppingList.append("\(index + 1). \(quantityOfItems[index]) \(food)")
+            shoppingList.append("\(index + 1). \(quantity[index]) \(food)")
         }
         return shoppingList
     }
@@ -31,7 +31,7 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        makeShoppingListWithItems(nameOfItems, quantityOfItems: quantityOfItems)
+        makeShoppingListWithItems(nameOfItems, quantity: quantityOfItems)
         
     }
 }
