@@ -19,13 +19,24 @@ class ViewController: UIViewController {
     // Name of items
     var nameOfItems: [String] = ["Bananas", "Apples", "Eggs", "Rolls"]
     
+    func makeShoppingListWithItems(items:Array<String>,quantityOfItems:Array<Int>)->Array<String> {
+        var newList: [String] = []
+        var newItem = ""
+        for (index, _) in items.enumerate() {
+            newItem = "\(index+1). \(String(quantityOfItems[index])) \(items[index])"
+            print(newItem)
+            newList.append(newItem)
+        }
+        print(newList)
+        return newList
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
         // After you're done implementing your method, call on it here. You can remove this example below
         
-        thisIsAnExample()
+        shoppingList = makeShoppingListWithItems(nameOfItems,quantityOfItems:quantityOfItems)
         
     }
     
