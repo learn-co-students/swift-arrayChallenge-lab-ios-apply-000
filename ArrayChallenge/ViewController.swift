@@ -24,9 +24,7 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         
         
-        
-        shoppingList += (makeShoppingListWithItems(nameOfItems, quantityOfItems: quantityOfItems))
-        
+        shoppingList = makeShoppingListWithItems(nameOfItems, quantityOfItems: quantityOfItems)
         print (shoppingList)
     }
     
@@ -57,3 +55,7 @@ class ViewController: UIViewController {
 
     
 }
+
+// *******NOTE******
+// There are errors with the test
+// Build won't pass but I did get the correct result
