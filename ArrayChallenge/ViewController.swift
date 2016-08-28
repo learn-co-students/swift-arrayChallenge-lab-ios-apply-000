@@ -35,5 +35,5 @@ class ViewController: UIViewController {
         }
         return shoppingList
     }
-    
+//Prints correct value, however tests do not pass. Duplicates result.
 }
