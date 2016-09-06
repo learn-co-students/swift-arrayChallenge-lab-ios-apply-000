@@ -29,11 +29,12 @@ class ViewController: UIViewController {
     
     
     func makeShoppingListWithItems(nameOfItems: [String],quantityOfItems: [Int]) -> [String] {
-        for (index, value) in quantityOfItems.enumerate(){
-            shoppingList.append("\(index + 1). \(value) \(nameOfItems[index])")
+        var newShoppingList: [String] = []
+        for (index, value) in quantityOfItems.enumerate() {
+            newShoppingList.append("\(index + 1). \(value) \(nameOfItems[index])")
         }
         
-        return shoppingList
+        return newShoppingList
     }
 
     
