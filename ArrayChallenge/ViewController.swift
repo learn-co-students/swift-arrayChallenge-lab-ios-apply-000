@@ -23,19 +23,19 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        // After you're done implementing your method, call on it here. You can remove this example below
+        shoppingList = makeShoppingListWithItems(nameOfItems, quantityOfItems: quantityOfItems)
         
-        thisIsAnExample()
-        
+        }
+    
+    
+func makeShoppingListWithItems(nameOfItems: [String], quantityOfItems: [Int]) -> [String] {
+    
+    var shoppingList: [String] = []
+    
+    for (index, item) in nameOfItems.enumerate() {
+        shoppingList.append("\(index + 1). \(quantityOfItems[index]) \(item)")
     }
-    
-    // This is just an example - you can remove this.
-    func thisIsAnExample() {
-        print("This ist just an example, you can remvove this.")
-    }
-    
-    
-    // Implement your method here
-
+    return shoppingList
+}
     
 }
