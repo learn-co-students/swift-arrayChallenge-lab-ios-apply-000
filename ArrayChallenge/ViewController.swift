@@ -20,20 +20,21 @@ class ViewController: UIViewController {
     var nameOfItems: [String] = ["Bananas", "Apples", "Eggs", "Rolls"]
     
     
-    override func viewDidLoad() {
-        super.viewDidLoad()
 
-        
-    makeShoppingListWithItems(nameOfItems,quantityOfItems: quantityOfItems)
-    print(shoppingList)
-    }
-    
-    
-    func makeShoppingListWithItems(itemList: [String], quantityOfItems: [Int]) -> [String] {
+    func makeShoppingListWithItems(nameOfItems: [String], quantityOfItems: [Int]) -> [String] {
+        var newList: [String] = []
         for (index, quantity) in quantityOfItems.enumerate() {
-            shoppingList.append("\(index + 1). \(quantity) \(itemList[index])")
+            newList.append("\(index + 1). \(quantity) \(nameOfItems[index])")
         }
+        shoppingList = newList
         return shoppingList
     }
-//Prints correct value, however tests do not pass. Duplicates result.
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        
+        
+        makeShoppingListWithItems(nameOfItems,quantityOfItems: quantityOfItems)
+    }
+
 }
