@@ -9,14 +9,28 @@
 
 class ShoppingList {
     
+    var newList: [String] = []
+    
     
     func createShoppingList(withItems items: [String], amountOfEachItem amounts: [String]) -> [String] {
         
-       
-        // Implement this function
+        
+        for (eachIndex, eachItem) in items.enumerated() {
+            
+            let eachQuantity = amounts[eachIndex]
+            
+            let indexNumbers = eachIndex + 1
+            
+            let result = ("\(indexNumbers). \(eachItem)(\(eachQuantity))")
+            
+            newList.append(result)
+        }
+        
+        return newList
+    }
         
         
         
     }
     
-}
+
