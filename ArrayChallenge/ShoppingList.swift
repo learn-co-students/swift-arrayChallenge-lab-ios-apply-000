@@ -8,14 +8,15 @@
 
 
 class ShoppingList {
-    
     var items:[String] = ["Bananas", "Apples", "Eggs", "Rolls"]
     var amounts:[String] = ["6", "4", "12", "4"]
     
     func createShoppingList(withItems items: [String], amountOfEachItem amounts: [String]) -> [String] {
+       
         let shoppingList = ShoppingList()
         var amtItems:[String] = []
         var completeList:[String] = []
+        
         
         
         for (item, amount) in zip(items, amounts)
@@ -28,9 +29,8 @@ class ShoppingList {
             completeList.append("\(index + 1). \(stuff)")
         }
         
+        return completeList
         
-        let generatedList = shoppingList.createShoppingList(withItems: items, amountOfEachItem: amounts)
-        return generatedList
     }
     
     
