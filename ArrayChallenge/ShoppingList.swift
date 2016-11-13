@@ -12,10 +12,14 @@ class ShoppingList {
     
     func createShoppingList(withItems items: [String], amountOfEachItem amounts: [String]) -> [String] {
         
-       
-        // Implement this function
-        
-        
+        var newArray : [String] = []
+        if items.isEmpty || items.count != amounts.count {
+            return ["Please fix your arrays"]
+        }
+        for x in 0..<items.count {
+            newArray.append("\(x+1). " + items[x] + "(" + amounts[x] + ")")
+        }
+        return newArray
         
     }
     
