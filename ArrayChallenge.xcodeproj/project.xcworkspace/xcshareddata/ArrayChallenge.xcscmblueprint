@@ -1,0 +1,37 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "02E00878EA341C9F535BF934428C0A331512A5BE",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "E00D0E0E7192FFAD17E5EDA35EE370AC1A29B3EA" : 9223372036854775807,
+    "02E00878EA341C9F535BF934428C0A331512A5BE" : 9223372036854775807,
+    "BC00B0370BF6CE50CF8D6B743E30CE9D4B9706A5" : 9223372036854775807
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "C81513ED-4FEB-4B61-93F6-9316E9165DEE",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "E00D0E0E7192FFAD17E5EDA35EE370AC1A29B3EA" : "",
+    "02E00878EA341C9F535BF934428C0A331512A5BE" : "swift-arrayChallenge-lab-ios-apply-000\/",
+    "BC00B0370BF6CE50CF8D6B743E30CE9D4B9706A5" : ".."
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "ArrayChallenge",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "ArrayChallenge.xcodeproj",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/arturlan\/swift-arrayChallenge-lab-ios-apply-000.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "02E00878EA341C9F535BF934428C0A331512A5BE"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/arturlan\/arturlan.github.io.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "BC00B0370BF6CE50CF8D6B743E30CE9D4B9706A5"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/arturlan\/swift-HelloToTheUniverse-lab-ios-apply-000.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "E00D0E0E7192FFAD17E5EDA35EE370AC1A29B3EA"
+    }
+  ]
+}
