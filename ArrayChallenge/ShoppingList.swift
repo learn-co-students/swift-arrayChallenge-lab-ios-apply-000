@@ -12,8 +12,8 @@ class ShoppingList {
     
     func createShoppingList(withItems items: [String], amountOfEachItem amounts: [String]) -> [String] {
         var completelist: [String] = []
-       
-      
+        
+        
         for (index, item) in items.enumerated() {
             
             let amount = amounts[index]
@@ -24,7 +24,7 @@ class ShoppingList {
             
         }
         
-            
+        
         
         return completelist
     }
@@ -33,5 +33,5 @@ class ShoppingList {
     let amount = ["6", "4", "12", "4"]
     
     
-
+    
 }
