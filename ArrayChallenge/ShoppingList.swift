@@ -8,15 +8,23 @@
 
 
 class ShoppingList {
+
+  let array1 = ["Bananas", "Apples", "Eggs", "Rolls"]
+  let array2 = ["6", "4", "12", "4"]
     
     
     func createShoppingList(withItems items: [String], amountOfEachItem amounts: [String]) -> [String] {
-        
-       
-        // Implement this function
-        
-        
+
+      var combination : [String] = []
+
+      for (index, item) in items.enumerated() {
+
+        let amount = amounts[index]
+
+         combination.append("\(index + 1). \(item)(\(amount))")
         
     }
-    
+      return combination
+    }
+
 }
