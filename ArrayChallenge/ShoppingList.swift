@@ -11,12 +11,13 @@ class ShoppingList {
     
     
     func createShoppingList(withItems items: [String], amountOfEachItem amounts: [String]) -> [String] {
-        
-       
-        // Implement this function
-        
-        
-        
+        var fixedShoppingList: [String] = []
+        var index = 0
+        while index < items.count {
+            fixedShoppingList.append("\(index + 1). \(items[index])(\(amounts[index]))" )
+            index += 1
+        }
+        return fixedShoppingList
     }
     
 }
