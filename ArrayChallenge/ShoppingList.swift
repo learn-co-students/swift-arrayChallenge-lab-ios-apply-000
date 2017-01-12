@@ -10,13 +10,20 @@
 class ShoppingList {
     
     
+    
     func createShoppingList(withItems items: [String], amountOfEachItem amounts: [String]) -> [String] {
+        var completeList: [String] = []
+        for (index, item) in items.enumerated() {
+            completeList.insert("\((index + 1)). \(item)", at: index)
+        }
+        for (index, amount) in amounts.enumerated() {
+            completeList[index] = completeList[index] + "(\(amount))"
+        }
         
-       
-        // Implement this function
-        
-        
+        return completeList
         
     }
+
+    
     
 }
