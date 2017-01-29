@@ -11,12 +11,8 @@ class ShoppingList {
     
     
     func createShoppingList(withItems items: [String], amountOfEachItem amounts: [String]) -> [String] {
-        
-       
         // Implement this function
-        
-        
-        
+        return items.enumerated().map {"\($0+1). \($1)(\(amounts[$0]))"}
     }
     
 }
