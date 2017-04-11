@@ -14,8 +14,11 @@ class ShoppingList {
         
        
         // Implement this function
-        
-        
+        var completedList: [String] = []
+        for (index, step) in items.enumerated(){
+            completedList[index] = "\(index + 1). \(amounts[index]) \(step)"
+        }
+        return completedList
         
     }
     
