@@ -12,11 +12,13 @@ class ShoppingList {
     
     func createShoppingList(withItems items: [String], amountOfEachItem amounts: [String]) -> [String] {
         
-       
-        // Implement this function
-        
-        
-        
+func createShoppingList(withItems items: [String], amountOfEachItem amounts: [String]) -> [String] {
+var list:[String] = []
+list.append("1. \(items[0]), \(amounts[0])")
+list.append("2. \(items[1]), \(amounts[1])")
+list.append("3. \(items[2]), \(amounts[2])")
+list.append("4. \(items[3]), \(amounts[3])")
+return list
     }
     
 }
